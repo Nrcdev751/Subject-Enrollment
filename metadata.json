@@ -1,0 +1,7 @@
+{
+  "name": "LBPH Neural Ops",
+  "description": "A sci-fi themed educational tool for understanding Local Binary Patterns Histograms (LBPH) Face Recognition logic.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

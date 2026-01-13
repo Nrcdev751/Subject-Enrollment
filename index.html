@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>LBPH Neural Ops</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sci: {
+                base: '#030712', // zinc-950
+                panel: '#09090b', // zinc-950/lighter
+                cyan: '#06b6d4', // cyan-500
+                neon: '#22d3ee', // cyan-400
+                green: '#10b981', // emerald-500
+                alert: '#ef4444', // red-500
+              }
+            },
+            fontFamily: {
+              mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+              sans: ['ui-sans-serif', 'system-ui', 'sans-serif'],
+            },
+            animation: {
+              'scan': 'scan 3s linear infinite',
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              scan: {
+                '0%': { top: '0%' },
+                '50%': { top: '100%' },
+                '100%': { top: '0%' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000;
+        color: #e0f2fe;
+        overflow: hidden; /* Prevent scrolling in app-like feel */
+      }
+      /* Custom Scrollbar for lists */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #09090b;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #22d3ee;
+        border-radius: 3px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
